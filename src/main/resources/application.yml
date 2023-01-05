@@ -1,9 +1,9 @@
 spring:
   datasource:
-    url: jdbc:postgresql://localhost:5432/postgres
-    username:
-    password:
-    driverClassName: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5440/postgres
+    username: postgres
+    password: 123456
+    driver-class-name: org.postgresql.Driver
   jpa:
     hibernate:
       ddl-auto: create-drop
@@ -11,7 +11,7 @@ spring:
     properties:
       hibernate:
         format_sql: true
-      database: postgres
-      database-platform: org.hibernate.dialect.PostgreSQLDialect
+    database: POSTGRESQL
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
 
 
